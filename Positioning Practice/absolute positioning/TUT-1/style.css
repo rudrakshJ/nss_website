@@ -1,0 +1,45 @@
+.article-title{
+    background: rebeccapurple;
+    color: white;
+    position: absolute;
+    margin: 0;
+
+    left:100px;
+    /*right:100px; If this value is also added, it would stretch the orginal block
+    so that it is 100px from right even in case of absolute position. otherwise the
+    size of background color is only equal to size of content*/
+    bottom: 10px;
+
+    /*width:50% It would give it the width of 50% of the containing element which is the
+    viewport here.*/
+
+    /*One observable change here is in background color i.e. only the content
+     of element is colored and not the whole line
+     Reason:
+     In relative positioning, an element is adjusted from its normal position
+     but retains its original space in the document layout, which means the space
+     it originally occupied is still considered part of the document flow.
+     Therefore, if you apply a background color to a relatively positioned element,
+     the entire area that the element originally occupied will be colored,
+     including any space that might have been left behind if the element was shifted
+     using the top, right, bottom, or left properties. The main reason behind is also
+     that it is currently considered a block level element.
+
+     In contrast, absolute positioning removes an element from the normal document flow.
+     And it is no longer a block level element.
+     An absolutely positioned element is taken out of the layout, and other elements
+     will flow around the space it originally occupied. As a result, when you apply
+     a background color to an absolutely positioned element, only the content area of
+     that element is colored, and the space it originally occupied in the document
+     flow is not affected.
+
+
+     Further it is seen that the orginal element is taken out of document's flow
+     and other elements have occupied its position and now it is placed relative to
+     the viewport. Above we can see that it is placed bottom of the with a gap of 10px;
+     {relative to the nearest containing block(which by default is viewport)}
+     BEFORE we scroll downwards.
+      */
+
+    z-index: 1;
+}

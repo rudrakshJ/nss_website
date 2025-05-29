@@ -1,0 +1,43 @@
+.page-title{
+    background: rebeccapurple;
+    color: white;
+
+
+    /*position:static; which is by default; May be used if prev we have diff position
+    and the media query is used to go back to static nature. It just prints in regular
+    flow hence below properties have no effect:
+
+    top:50px
+    left:100px
+      */
+
+    position: relative;
+/*Not much change observed here. But if we apply on article-title changes are still
+not seen */
+}
+
+.article-title{
+    background: hotpink;
+    color: white;
+    position: relative;
+    top:105px;
+    left:100px;
+    /*Observe that setting position to relative and changing top to 100px
+    moves element 100px away from top; where top is considered from the point it was
+    originally present. Similarly for left too.
+    Therefore it move item relative to the regular flow of html document.
+
+    When such a thing is done, it leaves an empty space and moves over other content
+    The other content isn't aware that something has been moved from its original place
+
+    Here the concept of z-index also comes. The one with higher z-index is displayed over
+    the other. For this the other component must also have relative position
+     */
+
+    z-index: 1;
+}
+
+.example{
+    position: relative;
+    z-index: 2;
+}

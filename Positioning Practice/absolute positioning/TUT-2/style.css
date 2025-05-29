@@ -1,0 +1,39 @@
+.article-with-sidebar{
+    position: relative;
+    /*We can now observer that our article title is no longer at bottom of screen
+    it is rather 10px above the bottom of the article element whose position is set
+    as relative just above.
+
+    Reason :
+    Relative is mostly used for positioning things but as soon as the nearest ancestor
+    or parent has a postion on it other than "static". It becomes the containing block
+    instead of viewport*/
+    border : 5px solid red;
+
+    /*
+    Position absolute is not generally used. It is only used when you want certain
+    element to be attached with another element so that if other one moves, the child
+    with absolute also moves.
+    */
+}
+
+.article-title{
+    background: rebeccapurple;
+    color: white;
+    position: absolute;
+    margin: 0;
+
+    left:100px;
+    right:100px;
+    bottom: 10px;
+}
+.article-sub-title{
+    background: rebeccapurple;
+    color: white;
+    position: absolute;
+    top:0;
+    margin: 0;
+
+    width: 50%; /*It is 50%of containing block i.e. article-with-slidebar*/
+
+}

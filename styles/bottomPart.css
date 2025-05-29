@@ -1,0 +1,48 @@
+.icon-img{
+    width: 30px;
+}
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    padding: 15px;
+}
+
+.social-media-icons a{
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.social-media-text{
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.social-media-icons img{
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    /* shorthand ---->transition: transform 0.3s ease-in-out ;*/
+}
+.social-media-icons img:hover{
+    transform: scale(1.2);
+}
+
+.bottom {
+    display: flex;
+    background-color: #19366b;
+
+}
+
+.bottom h3{
+    color: white;
+    font-family: "Arial Black";
+}
+
+.quick-links a{
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+}
