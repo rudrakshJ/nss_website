@@ -1,0 +1,36 @@
+.header{
+    border-bottom: 20px;
+    position: relative;
+}
+
+.header-items{
+
+}
+
+.header-logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    margin: 5px;
+}
+
+.header-logo img{
+    width: 100px;
+    height: auto;
+    /*To prevent the horizotal sliding issue must set margin to 0*/
+    margin: 0 0;
+    transition: transform .2s ease;
+}
+
+.header-logo img:hover{
+    transform: scale(1.05);
+}
+
+.header-title{
+    font-family: Impact, fantasy;
+    font-size:50px;
+
+}

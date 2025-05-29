@@ -1,0 +1,33 @@
+nav{
+    margin: 0;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    background-color: #19366b;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.large-bar
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+
+}
+
+.navBar-link{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none; /*It removes underline from the link*/
+
+}
+
+
+

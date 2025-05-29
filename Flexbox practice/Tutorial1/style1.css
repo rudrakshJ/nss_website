@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    background-color: #222831;
+}
+.item{
+    width: 25px;
+    height: 25px;
+    background-color: #3fa9f5;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    /*margin: 5px; ----> When display property is set to flex or grid; it is better to use gap property*/
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+/*
+To make a flexbox of above elements, we need to select parent element of the above 5
+ */
+
+.container{
+    display: flex;
+    /*Once container is made flexbox all elements inside it have to follow rules of flexbox*/
+    border: 2px solid black;
+    /*By default when container is made flexbox, the element are aranged next to each other*/
+    /*This horizontal alignment of elements is due to flex-direction property*/
+
+    gap: 10px;/*Sets gap between 2 boxes to be 10px*/
+    /*There are 2 axes in flexbox: MainAxis and CrossAxis
+    By default MainAxis goes form left to right and CrossAixs goes from top to bottom*/
+
+    /*flex-direction property defines the direction of mainAxis of flexbox*/
+    flex-direction: row; /*It means flexbox should behave like row of table and
+    items are arranged left to right*/
+    /*flex-direction: row-reverse --> when it is set item arranged form right to left*/
+    /*flex-direction: column --> when it is set item arranged form right to left*/
+    /*flex-direction: row-reverse --> when it is set item arranged form right to left*/
+
+    justify-content: center;/*Places elements at center*/
+    /*justify-content: flex-start ---> Places all elements at start of flexbox*/
+    /*justify-content: flex-end ---> Places element at end of flexbox*/
+    /*justify-content: center;Places element at center*/
+    /*For above 3 values, the gap between container remains at the value given by gap property*/
+
+    /*It is important to note that since row is the flex-direction here, flex-start places element at left end;
+    flex-end at the right end*/
+
+    /*If the flex-direction column, flex-start places element at top;
+    flex-end at the bottom end and center places them exactly in between top and bottom (effect is visible if contain is sufficiently
+    high. To observe the effect set height to 650px)*/
+
+    /*If justify-content:space-between;----> First element moves to leftmost end; last element to leftmost end and
+    remaining are placed at equal distance(And it adjusts automatically with the width of screen
+    If justify-content:space-evenly; -----> The spaces are equal everywhere i.e. space between fist and last element with end of
+    browser is the same as between the elements(It also dynamically changes)
+    If justify-content:space-around; ------> The space before first item and after last item is half the space between the items
+    The reason for this is that each element has equal space to its left and right due to which
+    for the space in b/w elements space of two consecutive elements get added and hence doubles
+    (This also changes dynamically)*/
+
+    /*Note above discussion was for the case when flex-direction is row; When it is column all things related to justify-content
+    would be vertical*/
+
+    height: 400px;
+    /*Note above talk was about alignment along main-axis; Now we will talk anout cross axis:
+    For alignment along cross axis; we use the align-item property*/
+    align-items: flex-end;
+    /*align item also has flex-end and flex-start values*/
+
+
+}
