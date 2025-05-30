@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_left" />
+    <script src="script.js" defer></script>
+<!--    *************!!!!!!!!!!!!!!!!!!!!!!!!
+It is vvvvvvvv important to add the defer attribute for script tag  because otherwise :
+JavaScript Runs Before the HTML Loads
+If your JavaScript code is above your HTML in your file, or if you don’t wait for the HTML to
+load, the browser can’t find the element yet and it leads to error such as "can't access property,.... is null"
+and similar errors-->
+
+</head>
+<body>
+    <div class="container1">
+        <button class="prev button">
+                <span class="material-symbols-rounded">
+                    chevron_left
+                </span>
+        </button>
+        <div class="image-container-with-text">
+            <div class="images">
+                <img src="resources/1.PNG" class="content">
+                <img src="resources/2.jpeg" class="content">
+                <img src="resources/3.jpeg" class="content">
+                <img src="resources/4.jpeg" class="content">
+                <img src="resources/5.jpeg" class="content">
+                <img src="resources/6.jpeg" class="content">
+            </div>
+            <h3>Mock Drill Session</h3>
+        </div>
+        <button class="next button">
+                <span class="material-symbols-rounded">
+                    chevron_left
+                </span>
+        </button>
+    </div>
+
+</body>
+</html>

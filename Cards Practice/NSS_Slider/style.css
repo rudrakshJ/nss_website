@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222831;
+}
+
+.container1{
+    display: flex;
+    max-width: 600px;
+    width: 250px;
+}
+
+.image-container-with-text{
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.images{
+    display: flex;
+    overflow: hidden;
+/*    Since we want any overflowed images from flexbox to be hidden */
+}
+
+button.next{
+    transform: rotate(180deg);
+}
+
+button.prev,button.next{
+    background-color: transparent;
+    border: none;
+}
+
+.content {
+    width: 100%;
+    border-radius: 9px;
+    flex-shrink: 0;
+/*    Flex shrink is property of individual elements and not of the parent container*/
+}
+
+.image-container-with-text h3{
+    margin: 0;
+    padding: 0;
+}

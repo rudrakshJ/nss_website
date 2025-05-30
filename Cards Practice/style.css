@@ -1,0 +1,96 @@
+/*Importing Google Font - Inter*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#eceffe,#ced6fb);
+}
+
+.card-list .card-item{
+    list-style: none;
+}
+
+.card-list .card-item .card-link{
+    width: 400px;
+    display: block;
+    background-color: white;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+
+    border: 2px solid transparent;
+
+    box-shadow: -9px 9px 12px 4px rgba(0, 0, 0, 0.2);
+
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+}
+
+.card-list .card-item .card-link:hover{
+    border: 2px solid #5372f0;
+}
+
+.card-list .card-item .card-image{
+    width: 100%;
+    /*This line above here is very important as it brings image back to a proper size*/
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+}
+
+.card-list .card-item .badge{
+    margin: 16px 8px 16px;
+    padding: 8px 16px;
+    width: fit-content;
+
+    font-size: 0.95rem;
+    font-weight: 500;
+    background-color: #475eff;
+    color: white; /*It sets the color of text of badge */
+
+
+    border-radius: 20px;
+
+}
+
+.card-list .card-item .card-title{
+    color:black;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.card-list .card-item .card-button{
+    width: 35px;
+    height: 35px;
+    color: #5372f0;
+    /*Sets the color of arrow*/
+    background-color: transparent;
+
+    margin: 30px 0 5px;
+
+    border-radius: 50%;
+
+    border-width: 2px;
+    border-color: #5372f0;
+    /*Sets the color of border of button*/
+    border-style: solid;
+
+    transform: rotate(-45deg);
+    transition-duration: 0.4s;
+/*    Short hand for above three is border: 2px solid black*/
+}
+
+.card-list .card-item:hover .card-button{
+    color: white;
+    background-color: #5372f0;
+}

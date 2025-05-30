@@ -33,6 +33,7 @@
 .bottom {
     display: flex;
     background-color: #19366b;
+    justify-content: space-between;
 
 }
 
@@ -41,8 +42,12 @@
     font-family: "Arial Black";
 }
 
-.quick-links a{
+.bottom a,p{
     text-decoration: none;
     color: white;
     font-weight: normal;
+}
+
+.quick-links{
+    margin-left: 3%;
 }
