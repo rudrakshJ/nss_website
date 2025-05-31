@@ -1,3 +1,7 @@
+// The following script was applicable when there was a single div element of class container1
+//For multiple divs of same class container refer to the script1.js
+
+
 const container = document.querySelector(".container1");
 const images = document.querySelectorAll('.images .content');
 //Note there is a difference between .images.content and .images .content selector
@@ -12,7 +16,11 @@ let imageIndex = 1;
 
 
 const slideImage = () => {
-    imageIndex = images.length === imageIndex ? 0 : imageIndex<0 ? images.length - 1 : imageIndex;
+    if (imageIndex >= images.length) imageIndex = 0;
+    if (imageIndex < 0) imageIndex = images.length - 1;
+
+    //Wierd logic:
+    //imageIndex = images.length === imageIndex ? 0 : imageIndex<0 ? images.length - 1 : imageIndex;
     //First checks is image.length === image index:
         //If true then sets imageIndex to 0
         //If false then:
@@ -29,10 +37,34 @@ const slideImage = () => {
 const updateClick = (eventObject) => {
     //clearInterval(intervalId);
     //clearInterval would stop the repeated action i.e. autoSlide identified by intervalId
+    const btn = eventObject.currentTarget;
+    //Important : eventObject.currentTarget vs eventObject.target
+    /* eventObject.target:
+        eventObject.target refers to the actual element that triggered the event
+        (i.e., the element where the event originated).
+        If you click on a <span> inside a <button>, eventObject.target will be the <span>.
+        Use when you want to know exactly which element was clicked, even if it is nested
+        inside another element.
 
-    imageIndex += eventObject.target.id === 'next' ? +1 : -1 ;
+
+        eventObject.currentTarget:
+        eventObject.currentTarget refers to the element to which the event listener is attached.
+        If you add a click listener to a <button>, eventObject.currentTarget will always be that
+        <button>, no matter where inside it you click.
+        Use when you want to always refer to the element with the event listener,
+        regardless of where the click happened inside it
+
+    */
+
+    if(btn.classList.contains('next') && btn.classList.contains('button')) {
+        imageIndex++;
+    }
+    if(btn.classList.contains('prev') && btn.classList.contains('button')){
+        imageIndex--;
+    }
+    //imageIndex += eventObject.target.classList.contains('next') ? 1 : -1 ;
     //It finds the updated image index
-    slideImage(imageIndex);
+    slideImage(); //No need to pass imageIndex here since we are updating it globally
     //After the index update, slideImage goes to the new image given by imageIndex.
 
     // autoSlide();
