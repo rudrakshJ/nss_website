@@ -1,0 +1,66 @@
+.message{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    padding: 1rem;
+    border: 0.2rem solid #19366b;
+    border-radius: 1rem;
+    box-shadow: -0.5rem 0.5rem 1rem 1px  #19366b;
+
+    margin: 1rem;
+
+    transition: 0.2s ease-in-out transform;
+
+}
+.message:hover{
+    transform: scale(1.008);
+}
+
+.message .message-content .message-para{
+    font-family: "Noto Sans", sans-serif;
+    color: #222831;
+}
+
+.message .message-content .message-title{
+    font-family: "Noto Sans",sans-serif;
+    color: #DC272A;
+    font-size: 1.5rem;
+
+}
+
+.message .person-img{
+    width: 140px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+#content-control{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.1rem;
+    display: block;
+    /*Above line i.e. setting display to block is essential in positioning the button at center*/
+
+    background-color: #DC272A;
+    border-radius: 0.3rem;
+    border:none;
+    color: white;
+
+    margin:2rem auto;
+    padding: 1rem 2rem;
+
+    cursor: pointer;
+
+    transition: 0.2s transform;
+}
+
+#content-control:hover{
+    background-color: #D1272A;
+}
+
+.hidden{
+    display: none;
+}
+
