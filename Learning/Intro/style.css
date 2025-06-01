@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body{
+    background-image: linear-gradient(45deg, lightblue,lightcoral);
+}
+
+.heading-of-intro{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-family: "Great Vibes", cursive;
+    font-size: 1.8rem;
+
+}
+
+.motto{
+    text-align: center;
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+.intro-para{
+    font-family: "Titillium Web", sans-serif;
+
+}
+
+.ending-of-intro{
+    color: #19366b;
+    font-family: "Great Vibes", cursive;
+    font-size: 1.5rem;
+}
+
+.introbox{
+    border:3px solid white;
+    padding: 0.8rem;
+    margin: 0.8rem;
+    border-radius: 1rem;
+}

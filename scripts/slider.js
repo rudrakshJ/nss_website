@@ -51,6 +51,10 @@ container.forEach((element) => {
     };
 
     buttons.forEach((b) => b.addEventListener('click', updateClick));
+
+    container.forEach((c) => c.addEventListener("mouseleave",()=> slideImage(0)));
+
+// Both for each and addEventListener need function inside them and not the function call hence we require arrow function for both
 })
 
 

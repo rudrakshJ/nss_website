@@ -1,3 +1,8 @@
+.message-cards{
+    margin-bottom: 6rem;
+}
+
+
 .message{
     display: flex;
     gap: 2rem;

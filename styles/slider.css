@@ -1,3 +1,10 @@
+.recent-event{
+    color: #19366b;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
 
 .container{
     display: flex;

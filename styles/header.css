@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 .header{
     border-bottom: 20px;
     position: relative;
@@ -30,9 +32,13 @@
 }
 
 .header-title{
-    font-family: Impact, fantasy;
-    font-size:50px;
+    font-family: "playfair display", serif;
+    font-size:100px;
+    font-weight: bold;
+    color: #19366b;
 
 }
+
+
 
 
