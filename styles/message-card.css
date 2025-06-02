@@ -27,18 +27,18 @@
 .message .message-content .message-para{
     font-family: "Noto Sans", sans-serif;
     color: #222831;
-    font-size: 1.2rem;
+    font-size: 3.2vmin;
 }
 
 .message .message-content .message-title{
     font-family: "Noto Sans",sans-serif;
     color: #DC272A;
-    font-size: 2rem;
+    font-size: 5vmin;
 
 }
 
 .message .person-img{
-    width: 140px;
+    width: 200px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 50%;

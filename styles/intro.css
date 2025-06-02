@@ -4,13 +4,13 @@
 .heading-of-intro{
     color: #d8031c;
     font-family: "Great Vibes", cursive;
-    font-size:2rem;
+    font-size:6vmin;
 
 }
 
 .motto{
     text-align: center;
-    font-size: 4rem;
+    font-size: 9vmin;
     color: #e31d24;
     text-shadow: -2px -2px 0 #4b38bf, 2px -2px 0 #4b38bf,-2px 2px 0 #4b38bf, 2px 2px 0 #4b38bf;
     font-family: "Titillium Web", sans-serif;
@@ -20,13 +20,13 @@
 .intro-para{
     font-family: "Noto Sans", sans-serif;
     color: black;
-    font-size: 1.3rem;
+    font-size: 4vmin;
 }
 
 .ending-of-intro{
     color: #19366b;
     font-family: "Great Vibes", cursive;
-    font-size: 1.5rem;
+    font-size:  6vmin;
 }
 
 .introbox{
