@@ -17,6 +17,8 @@
 
     transition: 0.2s ease-in-out transform;
 
+    background-color: #dee7ef;
+
 }
 .message:hover{
     transform: scale(1.008);
@@ -25,12 +27,13 @@
 .message .message-content .message-para{
     font-family: "Noto Sans", sans-serif;
     color: #222831;
+    font-size: 1.2rem;
 }
 
 .message .message-content .message-title{
     font-family: "Noto Sans",sans-serif;
     color: #DC272A;
-    font-size: 1.5rem;
+    font-size: 2rem;
 
 }
 
@@ -69,3 +72,12 @@
     display: none;
 }
 
+.message-cards{
+    margin: 0 5% 0;
+}
+
+@media (max-width: 540px){
+    .message{
+        flex-direction: column;
+    }
+}

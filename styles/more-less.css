@@ -1,0 +1,12 @@
+.more-less {
+    padding:0.8rem;
+    background-color: #5a79a5;
+    color: #fff;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.more{
+    display: none;
+}

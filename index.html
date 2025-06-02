@@ -4,8 +4,14 @@
     <title>NSS NSUT CELL</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_left" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/more-less.css">
+
     <script src="scripts/slider.js" defer></script>
     <script src="scripts/message-card.js" defer></script>
+    <script src="scripts/navBar.js" defer></script>
+    <script src="scripts/more-less.js" defer></script>
+
 <!--    Important to add defer-->
 
 </head>
@@ -16,19 +22,17 @@
 
         <header class="header">
             <div class="header-items">
-                <div class="header-logo">
-                    <a href="https://nss.gov.in/" class="nss-logo_link" target="_blank">
-                        <img src="resources/nss-logo.png" alt="NSS Logo">
-                    </a>
 
-                    <p class="header-title" style="margin: 0;font-size:xx-large">NSS NSUT CELL</p>
+                <a href="https://nss.gov.in/" class="nss-logo_link" target="_blank">
+                    <img src="resources/nss-logo.png" alt="NSS Logo">
+                </a>
 
-                    <a href="http://nsut.ac.in/" class="nsut-logo_link" target="_blank">
-                        <img src="resources/nsut-logo.png" alt="NSS Logo">
-                    </a>
+                <p class="header-title">NSS NSUT CELL</p>
 
+                <a href="http://nsut.ac.in/" class="nsut-logo_link" target="_blank">
+                    <img src="resources/nsut-logo.png" alt="NSS Logo">
+                </a>
 
-                </div>
             </div>
         </header>
     </div>
@@ -37,8 +41,10 @@
     <div id="navBar">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/navBar.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
 
         <nav>
+            <h3 class="nav-title"> NSUT NSS CELL</h3>
             <ul class="large-bar">
                 <li class="nav-item" id="nav-home"><a href="#" class="navBar-link">Home</a></li>
                 <li class="nav-item" id="nav-info"><a href="#" class="navBar-link">Info</a></li>
@@ -46,7 +52,20 @@
                 <li class="nav-item" id="nav-achvmnt"><a href="#" class="navBar-link">Achievements</a></li>
                 <li class="nav-item" id="nav-abt"><a href="#" class="navBar-link">About Us</a></li>
             </ul>
+            <div class="nav-toggle-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
         </nav>
+
+        <div class="dropdown-menu close">
+
+            <a href="#" class="navBar-link">Home</a>
+            <a href="#" class="navBar-link">Info</a>
+            <a href="#" class="navBar-link">Members</a>
+            <a href="#" class="navBar-link">Achievements</a>
+            <a href="#" class="navBar-link">About Us</a>
+        </div>
 
     </div>
 
@@ -56,7 +75,7 @@
         <link rel="stylesheet" href="styles/message-card.css">
 
 
-        <div class="introbox">
+        <div class="introbox more-less-text">
             <link rel="stylesheet" href="styles/intro.css">
             <h1 class="motto">Not Me But YOU</h1>
 
@@ -64,8 +83,13 @@
                 Dear NSS Family and Friends,
             </h3>
             <p class="intro-para">
-                We are thrilled to welcome you to the official website of the National Service Scheme (NSS) at Netaji Subhas University of Technology. Our mission is to empower students through meaningful community service, fostering a spirit of social responsibility and leadership. At NSS, we live by the motto Not Me, But You, believing in the power of volunteerism to create positive change in society. Whether you're a current volunteer, a prospective member, or simply someone interested in learning more about our initiatives, we invite you to explore our site and discover numerous opportunities for involvement. Join us in our journey of service, growth, and excellence as we strive to make a difference in our community and beyond. Together, let's cultivate compassion, drive change, and inspire one another to reach greater heights. Thank you for visiting, and we look forward to your active participation in our programs!
+                We are thrilled to welcome you to the official website of the National Service Scheme (NSS) at Netaji Subhas University of Technology. Our mission is to empower students through meaningful community service, fostering a spirit of social responsibility and leadership. At NSS, we live by the motto Not Me, But You, believing in the power of volunteerism to create positive change in society.
+                <span class="dots">...</span>
+                <span class="more">
+                    Whether you're a current volunteer, a prospective member, or simply someone interested in learning more about our initiatives, we invite you to explore our site and discover numerous opportunities for involvement. Join us in our journey of service, growth, and excellence as we strive to make a difference in our community and beyond. Together, let's cultivate compassion, drive change, and inspire one another to reach greater heights. Thank you for visiting, and we look forward to your active participation in our programs!
+                </span>
             </p>
+            <button class="more-less">Read More</button>
 
             <h3 class="ending-of-intro">
                 Warm regards
@@ -79,11 +103,16 @@
                 <div class="message" id="vc-msg">
                     <img class="person-img" src="resources/Message-Card/vc-image.jpeg">
 
-                    <div class="message-content">
+                    <div class="message-content more-less-text">
                         <h3 class="message-title">Message from the Vice Chancellor (Prof. Anand Srivastava)</h3>
-                        <p class="message-para">
-                            It is with great pride that I greet all members and supporters of the National Service Scheme (NSS) at Netaji Subhas University of Technology. NSS plays a vital role in shaping our students' character by fostering social responsibility and community service. NSS volunteers exemplify compassion, leadership, and selflessness through their dedication to various social initiatives. Their efforts inspire us and create a positive impact on society. I encourage every student to actively engage in NSS programs. Through service, you will not only make a difference but also develop valuable skills and lasting friendships. Thank you for your commitment to NSS. Your efforts help make our university a true beacon of change
+                        <p class="message-para ">
+                            It is with great pride that I greet all members and supporters of the National Service Scheme (NSS) at Netaji Subhas University of Technology. NSS plays a vital role in shaping our students' character by fostering social responsibility and community service. NSS volunteers exemplify compassion, leadership,
+                            <span class="dots">...</span>
+                            <span class="more">
+                                and selflessness through their dedication to various social initiatives. Their efforts inspire us and create a positive impact on society. I encourage every student to actively engage in NSS programs. Through service, you will not only make a difference but also develop valuable skills and lasting friendships. Thank you for your commitment to NSS. Your efforts help make our university a true beacon of change
+                            </span>
                         </p>
+                        <button class="more-less">Read More</button>
                     </div>
                 </div>
             </div>
@@ -94,11 +123,14 @@
                 <div class="message" id="pc-msg">
                     <img class="person-img" src="resources/Message-Card/pc-image.png">
 
-                    <div class="message-content">
+                    <div class="message-content more-less-text">
                         <h3 class="message-title">Message from the Program Coordinator (Dr. Praveen Saroha)</h3>
                         <p class="message-para">
-                            Welcome to the NSS NSUT Cell! It is an honor to serve as your Program Coordinator and work with such passionate individuals dedicated to making a positive impact. NSS is more than a program; it's a movement empowering students to tackle real-world challenges. Through initiatives in areas like environmental conservation and education, we foster service, leadership, and teamwork. Each project is an opportunity to grow and contribute to our community. I encourage you to embrace these experiences and bring your unique talents to our efforts. Thank you for your commitment to NSS. I look forward to the great work we'll accomplish together.
+                            Welcome to the NSS NSUT Cell! It is an honor to serve as your Program Coordinator and work with such passionate individuals dedicated to making a positive impact. NSS is more than a program; it's a movement empowering students to tackle real-world challenges. Through initiatives in areas like environmental conservation and education, we foster
+                            <span class="dots">...</span><span class="more">service, leadership, and teamwork. Each project is an opportunity to grow and contribute to our community. I encourage you to embrace these experiences and bring your unique talents to our efforts. Thank you for your commitment to NSS. I look forward to the great work we'll accomplish together.
+                            </span>
                         </p>
+                        <button class="more-less">Read More</button>
                     </div>
                 </div>
             </div>
@@ -107,11 +139,16 @@
                 <div class="message" id="fp-msg">
                     <img class="person-img" src="resources/Message-Card/fp-image.jpg">
 
-                    <div class="message-content">
+                    <div class="message-content more-less-text">
                         <h3 class="message-title">Message from the Founding President (Mr. Anuj)</h3>
                         <p class="message-para">
-                            As the Founding President of NSS NSUT Cell, I am filled with pride witnessing the remarkable journey we've shared. From our beginnings to becoming a community driven by service, our growth reflects the passion of every member. NSS is more than an organization—it's a way of life that inspires us to give back. Our projects in areas like environmental sustainability and social outreach embody our commitment to making a difference. Embrace the spirit of service. It's not just a duty but an opportunity to lead, empathize, and create change. Together, we can continue to amplify our impact and carry forward the NSS legacy. Thank you for your dedication. Let's keep achieving great things!
+                            As the Founding President of NSS NSUT Cell, I am filled with pride witnessing the remarkable journey we've shared. From our beginnings to becoming a community driven by service, our growth
+                            <span class="dots">...</span>
+                            <span class="more">
+                                reflects the passion of every member. NSS is more than an organization — it's a way of life that inspires us to give back. Our projects in areas like environmental sustainability and social outreach embody our commitment to making a difference. Embrace the spirit of service. It's not just a duty but an opportunity to lead, empathize, and create change. Together, we can continue to amplify our impact and carry forward the NSS legacy. Thank you for your dedication. Let's keep achieving great things!
+                            </span>
                         </p>
+                        <button class="more-less">Read More</button>
                     </div>
                 </div>
             </div>
@@ -120,18 +157,22 @@
                 <div class="message" id="p-msg">
                     <img class="person-img" src="resources/Message-Card/p-image.jpeg">
 
-                    <div class="message-content">
+                    <div class="message-content more-less-text">
                         <h3 class="message-title">Message from the President (Shubham Kumar)</h3>
                         <p class="message-para">
-                            It's an honor to serve as the President of the NSS NSUT Cell and to witness the dedication and enthusiasm of our volunteers . Each initiative we undertake whether a cleanliness drive or an awareness campaign shows our commitment to social responsibility. I encourage everyone to get involved, as these experiences help us grow in leadership and empathy. Together, we can make a meaningful impact with your dedication. Let's continue to strive for excellence as epitome of change for the society!
+                            It's an honor to serve as the President of the NSS NSUT Cell and to witness the dedication and enthusiasm of our volunteers . Each initiative we undertake whether a cleanliness drive or
+                            <span class="dots">...</span>
+                            <span class="more">
+                                an awareness campaign shows our commitment to social responsibility. I encourage everyone to get involved, as these experiences help us grow in leadership and empathy. Together, we can make a meaningful impact with your dedication. Let's continue to strive for excellence as epitome of change for the society!
+                            </span>
                         </p>
+                        <button class="more-less">Read More</button>
                     </div>
                 </div>
             </div>
 
             <button id="content-control">Read More</button>
         </div>
-
 
 
         <div class="recent-events">

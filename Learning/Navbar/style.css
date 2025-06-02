@@ -9,18 +9,12 @@ nav{
     text-align: center;
 }
 
-.navBar{
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
 .nav-toggle-button{
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
-    padding: 10px;
+
 }
 
 .dropdown-menu{
@@ -40,7 +34,7 @@ nav{
     width : 30%;
 
     z-index: 9;
-    /*    This allows*/
+/*    This allows*/
 
     transition: max-height 0.3s ease;
 }
@@ -81,14 +75,8 @@ nav{
     .large-bar{
         display: none;
     }
-    .nav-toggle-button{
+    .nav-toggle-button, .nav-title{
         display: block;
     }
 
-}
-
-@media (max-width: 630px){
-    .nav-title{
-        display:block;
-    }
 }
